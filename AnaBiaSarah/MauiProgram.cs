@@ -11,8 +11,10 @@ public static class MauiProgram
 			.UseMauiApp<App>()
 			.ConfigureFonts(fonts =>
 			{
-				fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
-				fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
+				fonts.AddFont("White Night Club.ttf", "White Night Club");
+				fonts.AddFont("White Night Club.ttf", "White Night Club");
+				fonts.AddFont("White Night Club.ttf", "White Night Club");
+				fonts.AddFont("Boldena.ttf", "Boldena");
 			});
 
 #if DEBUG
@@ -22,3 +24,4 @@ public static class MauiProgram
 		return builder.Build();
 	}
 }
+
