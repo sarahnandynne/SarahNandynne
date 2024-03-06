@@ -1,93 +1,93 @@
-﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="AnaBiaSarah.MainPage"
-            Shell.NavBarIsVisible="false"
-            BackgroundColor="#ece5d9">
+﻿<ContentPage  xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+              x:Class="AnaBiaSarah.MainPage"
+              Shell.NavBarIsVisible="false"
+              BackgroundColor="#ece5d9">
 
 
 <Grid>
-  <Image Source="portainicio.jpg"/>
+ <Image Source="portainicio.jpg"/>
 
-    <Label Text="Porta da Sorte"
-           TextColor="Black"
-           Margin="20,30,20,50"
-           FontSize="75"
-           FontFamily="White Night Club"
-           HorizontalOptions="Fill"
-           HorizontalTextAlignment="Center"
-           VerticalOptions="Start"/> 
+ <Label Text="Porta da Sorte"
+        TextColor="Black"
+        Margin="20,30,20,50"
+        FontSize="75"
+        FontFamily="White Night Club"
+        HorizontalOptions="Fill"
+        HorizontalTextAlignment="Center"
+        VerticalOptions="Start"/> 
                   
-  <VerticalStackLayout
-           VerticalOptions="End"
-           Spacing="10"
-           Margin="15,0,15,40">
+<VerticalStackLayout
+        VerticalOptions="End"
+        Spacing="10"
+        Margin="15,0,15,40">
 
-   <Button Text="Iniciar"
-           Clicked="BotaoIniciarFoiClicado"
-              HeightRequest="50"
-              CornerRadius="25"
-              BackgroundColor="#8B4513"
-              TextColor="Black"
-              Margin="0,30,0,10"
-              FontSize="35"
-              FontFamily="White Night Club"/> 
+<Button Text="Iniciar"
+        Clicked="BotaoIniciarFoiClicado"
+        HeightRequest="50"
+        CornerRadius="25"
+        BackgroundColor="#8B4513"
+        TextColor="Black"
+        Margin="0,30,0,10"
+        FontSize="35"
+        FontFamily="White Night Club"/> 
 
-   <Button Text="Sobre"
-              Clicked="BotaoSobreFoiClicado"
-              BorderColor="Black"
-              HeightRequest="50"
-              CornerRadius="25"
-              BackgroundColor="#8B4513"
-              TextColor="Black"
-              FontSize="35"
-              FontFamily="White Night Club"/>
+<Button Text="Sobre"
+        Clicked="BotaoSobreFoiClicado"
+        BorderColor="Black"
+        HeightRequest="50"
+        CornerRadius="25"
+        BackgroundColor="#8B4513"
+        TextColor="Black"
+        FontSize="35"
+        FontFamily="White Night Club"/>
  </VerticalStackLayout>
 
 
-<Frame x:Name="frameAbout"
-           IsVisible="false"
-           Margin="10,20"
-           CornerRadius="20"
-           BackgroundColor="#3f343a"
-           HorizontalOptions="Fill"
-           VerticalOptions="Fill">
+<Frame  x:Name="frameAbout"
+        IsVisible="false"
+        Margin="10,20"
+        CornerRadius="20"
+        BackgroundColor="#DFD3BA"
+        HorizontalOptions="Fill"
+        VerticalOptions="Fill">
 <Grid>
-        <Grid.RowDefinitions>
-          <RowDefinition Height="90"/>
-          <RowDefinition Height="*"/>
-          <RowDefinition Height="60"/>
- </Grid.RowDefinitions>
+ <Grid.RowDefinitions>
+ <RowDefinition Height="90"/>
+ <RowDefinition Height="*"/>
+ <RowDefinition Height="60"/>
+</Grid.RowDefinitions>
 
-<Label    Text="Sobre"
-          TextColor="Black"
-          Margin="20,22,20,10"
-          FontSize="70"
-          FontFamily="White Night Club"
-          HorizontalOptions="Fill"
-          HorizontalTextAlignment="Center"
-          Grid.Row="0"/>
+<Label  Text="Sobre"
+        TextColor="Black"
+        Margin="20,22,20,10"
+        FontSize="70"
+        FontFamily="White Night Club"
+        HorizontalOptions="Fill"
+        HorizontalTextAlignment="Center"
+        Grid.Row="0"/>
 
- <Label   Text="Aplicativo criado por Ana Beatriz Bovo e Sarah Nandynne, com intuito de testar a intuição dos nossos usuários através da diversão. A idéia foi criar um jogo no estilo 'RPG Baseado em Texto' como Programação Orientada a Objeto, .NET MAUI, Algoritmos, UI (User Interface) e UX (User eXperince)"
-          CharacterSpacing="1"
-          LineHeight="1.5"
-          TextColor="#8B4513"
-          HorizontalOptions="Fill"
-          HorizontalTextAlignment="Center"
-          VerticalOptions="Center"
-          FontSize="20"
-          FontFamily="Boldena"
-           Grid.Row="1"/>
+ <Label Text="Aplicativo criado por Ana Beatriz Bovo e Sarah Nandynne, com intuito de testar a intuição dos nossos usuários através da diversão. A idéia foi criar um jogo no estilo 'RPG Baseado em Texto' como Programação Orientada a Objeto, .NET MAUI, Algoritmos, UI (User Interface) e UX (User eXperince)"
+        CharacterSpacing="1"
+        LineHeight="1.5"
+        TextColor="#8B4513"
+        HorizontalOptions="Fill"
+        HorizontalTextAlignment="Center"
+        VerticalOptions="Center"
+        FontSize="20"
+        FontFamily="Boldena"
+        Grid.Row="1"/>
 
-   <Button Text="Voltar"
-           Clicked="BotaoVoltarFoiClicado"
-           HeightRequest="50"
-           CornerRadius="25"
-           BackgroundColor="#8B4513"
-           TextColor="Black"
-           Margin="0,0,0,10"
-           FontSize="18"
-           FontFamily="White Night Club"
-           Grid.Row="2"/>
+<Button Text="Voltar"
+        Clicked="BotaoVoltarFoiClicado"
+        HeightRequest="50"
+        CornerRadius="25"
+        BackgroundColor="#8B4513"
+        TextColor="Black"
+        Margin="0,0,0,10"
+        FontSize="18"
+        FontFamily="White Night Club"
+        Grid.Row="2"/>
 </Grid>
 </Frame>
 </Grid>

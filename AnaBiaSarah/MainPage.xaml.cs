@@ -10,8 +10,8 @@ public partial class MainPage : ContentPage
 	}
  private void BotaoIniciarFoiClicado(object sender, EventArgs args)
   {
-  //  if (Application.Current != null)
-  //    Application.Current.MainPage = new GamePage();
+  if (Application.Current != null)
+    Application.Current.MainPage = new JogoPage();
   }
 
  private void BotaoSobreFoiClicado(object sender, EventArgs args)
@@ -22,7 +22,7 @@ public partial class MainPage : ContentPage
 
 private void BotaoVoltarFoiClicado(object sender, EventArgs args)
   {
-    frameAbout.IsVisible = true;
+    frameAbout.IsVisible = false;
   }
  
 
