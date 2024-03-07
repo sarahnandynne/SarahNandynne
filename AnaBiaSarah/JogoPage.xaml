@@ -4,18 +4,61 @@
               Background="#ece5d9"
               Shell.NavBarIsVisible="false">
 <Grid>
+<Grid.RowDefinitions>
+          <RowDefinition Height="*"/>
+          <RowDefinition Height="480"/>
+          <RowDefinition Height="60"/>
+</Grid.RowDefinitions>
+<Grid.ColumnDefinitions>
+          <ColumnDefinition Width="*"/>
+          <ColumnDefinition Width="*"/>
+</Grid.ColumnDefinitions>
+
 <Image Source="portajogo.png"
-       HorizontalOptions="Center"
-       VerticalOptions="Center"/> 
+       Margin="10,0"
+       Grid.Row="1"
+       Grid.Column="0"
+       VerticalOptions="Fill"/>
+
+<Image Source="portajogo.png"
+       Margin="10,0" 
+       Grid.Row="1"
+       Grid.Column="1"
+       VerticalOptions="Fill"/>
 
 <Label Text="Em uma das portas, há uma surpresa para você! Teste sua intuição e escolha uma delas."
        TextColor="Black"
-       Margin="20,30,20,50"
+       Grid.Row="0"
+       Grid.Column="0"
+       Grid.ColumnSpan="2"
        FontSize="30"
        FontFamily="Boldena"
        HorizontalOptions="Fill"
        HorizontalTextAlignment="Center"
        VerticalOptions="Start"/>
- </Grid>
-       
+
+<Button Text="1"
+        Clicked="Botao1FoiClicado"
+        TextColor="BLack"
+        FontFamily="Boldena"
+        Background="#8B4513"
+        HeightRequest="50"
+        WidthRequest="50"
+        FontSize="30"
+        Grid.Row="2"
+        Grid.Column="0"/>
+
+<Button Text="2"
+        Clicked="Botao2FoiClicado"
+        TextColor="BLack"
+        FontFamily="Boldena"
+        Background="#8B4513"
+        HeightRequest="50"
+        WidthRequest="50"
+        FontSize="30"
+        Grid.Row="2"
+        Grid.Column="1"/>
+
+
+</Grid>
 </ContentPage>
