@@ -1,0 +1,44 @@
+<ContentPage  xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+              x:Class="AnaBiaSarah.JogoPage2"
+              Background="#ece5d9"
+              Shell.NavBarIsVisible="false">
+
+<Grid>
+<Grid.RowDefinitions>
+          <RowDefinition Height="*"/>
+          <RowDefinition Height="550"/>
+          <RowDefinition Height="50"/>
+</Grid.RowDefinitions>
+
+<Image Source="emojitriste.jpg"
+       Margin="10,0" 
+       Grid.Row="1"
+       Grid.Column="0"
+       VerticalOptions="Fill"/>
+
+
+<Label Text="Que pena, você errou! Tente novamente."
+       TextColor="Black"
+       Grid.Row="0"
+       Grid.Column="0"
+       FontSize="30"
+       FontFamily="Boldena"
+       HorizontalOptions="Fill"
+       HorizontalTextAlignment="Center"
+       VerticalOptions="Start"/>
+
+<Button Text="Voltar ao início"
+        Clicked="BotaoVoltarAoInicioFoiClicado"
+        TextColor="BLack"
+        FontFamily="White Night Club"
+        Background="#8B4513"
+        Margin="10,0"
+        HeightRequest="50"
+        CornerRadius="25"
+        HorizontalOptions="FillAndExpand"
+        FontSize="30"
+        Grid.Row="2"
+        Grid.Column="0"/>
+</Grid>
+</ContentPage>              

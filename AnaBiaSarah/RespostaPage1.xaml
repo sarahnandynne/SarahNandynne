@@ -1,0 +1,41 @@
+<ContentPage  xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+              x:Class="AnaBiaSarah.RespostaPage1"
+              Background="#ece5d9"
+              Shell.NavBarIsVisible="false">
+<Grid>
+<Grid.RowDefinitions>
+          <RowDefinition Height="*"/>
+          <RowDefinition Height="500"/>
+          <RowDefinition Height="100"/>
+</Grid.RowDefinitions>
+
+<Image Source="dinheiro.jpg"
+       Margin="10,0"
+       Grid.Row="1"
+       Grid.Column="0"
+       VerticalOptions="Fill"/>
+
+<Label Text="Parabéns, você ganhou 1 milhão de reais!"
+        TextColor="Black"
+       Grid.Row="0"
+       Grid.Column="0"
+       FontSize="30"
+       FontFamily="Boldena"
+       HorizontalOptions="Fill"
+       HorizontalTextAlignment="Center"
+       VerticalOptions="Start"/>
+
+<Button Text="Início"
+        Clicked="BotaoInicioFoiClicado"
+        TextColor="BLack"
+        FontFamily="White Night Club"
+        Background="#8B4513"
+        Margin="10,0"
+        HeightRequest="50"
+        HorizontalOptions="FillAndExpand"
+        FontSize="30"
+        Grid.Row="2"
+        Grid.Column="0"/>
+</Grid>
+</ContentPage>              

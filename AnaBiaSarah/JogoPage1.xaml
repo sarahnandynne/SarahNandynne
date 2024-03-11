@@ -1,0 +1,62 @@
+<ContentPage  xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+              x:Class="AnaBiaSarah.JogoPage1"
+              Background="#ece5d9"
+              Shell.NavBarIsVisible="false">
+
+<Grid>
+<Grid.RowDefinitions>
+          <RowDefinition Height="*"/>
+          <RowDefinition Height="350"/>
+          <RowDefinition Height="60"/>
+</Grid.RowDefinitions>
+
+<Grid.ColumnDefinitions>
+          <ColumnDefinition Width="*"/>
+          <ColumnDefinition Width="*"/>
+</Grid.ColumnDefinitions>
+
+<Image Source="sacodelixo.jpg"
+       Aspect="AspectFill"
+       Margin="10,0" 
+       Grid.Row="1"
+       Grid.Column="0"
+       Grid.ColumnSpan="2"
+       VerticalOptions="Fill"/>
+
+<Label Text="Você acaba de se deparar com um saco de lixo! Você abre ele ou não?"
+       TextColor="Black"
+       Grid.Row="0"
+       Grid.Column="0"
+       Grid.ColumnSpan="2"
+       FontSize="30"
+       FontFamily="Boldena"
+       HorizontalOptions="Fill"
+       HorizontalTextAlignment="Center"
+       VerticalOptions="Start"/>
+
+<Button Text="Sim"
+        Clicked="BotaoSimFoiClicado"
+        HeightRequest="50"
+        CornerRadius="25"
+        BackgroundColor="#8B4513"
+        TextColor="Black"
+        FontSize="35"
+        Grid.Row="2"
+        Grid.Column="0"
+        FontFamily="White Night Club"/> 
+
+<Button Text="Não"
+        Clicked="BotaoNaoFoiClicado"
+        HeightRequest="50"
+        CornerRadius="25"
+        BackgroundColor="#8B4513"
+        TextColor="Black"
+        FontSize="35"
+        Grid.Row="2"
+        Grid.Column="1"
+        FontFamily="White Night Club"/> 
+
+</Grid>
+</ContentPage>
+

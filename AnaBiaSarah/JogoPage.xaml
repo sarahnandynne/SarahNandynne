@@ -3,12 +3,15 @@
               x:Class="AnaBiaSarah.JogoPage"
               Background="#ece5d9"
               Shell.NavBarIsVisible="false">
+
 <Grid>
 <Grid.RowDefinitions>
           <RowDefinition Height="*"/>
-          <RowDefinition Height="480"/>
+          <RowDefinition Height="400"/>
+          <RowDefinition Height="50"/>
           <RowDefinition Height="60"/>
 </Grid.RowDefinitions>
+
 <Grid.ColumnDefinitions>
           <ColumnDefinition Width="*"/>
           <ColumnDefinition Width="*"/>
@@ -40,7 +43,7 @@
 <Button Text="1"
         Clicked="Botao1FoiClicado"
         TextColor="BLack"
-        FontFamily="Boldena"
+        FontFamily="White Night Club"
         Background="#8B4513"
         HeightRequest="50"
         WidthRequest="50"
@@ -51,7 +54,7 @@
 <Button Text="2"
         Clicked="Botao2FoiClicado"
         TextColor="BLack"
-        FontFamily="Boldena"
+        FontFamily="White Night Club"
         Background="#8B4513"
         HeightRequest="50"
         WidthRequest="50"
@@ -59,6 +62,22 @@
         Grid.Row="2"
         Grid.Column="1"/>
 
+<Button Text="Voltar"
+        Clicked="BotaoVoltar2FoiClicado"
+        HeightRequest="50"
+        CornerRadius="25"
+        BackgroundColor="#8B4513"
+        TextColor="Black"
+        Margin="10,0"
+        FontSize="35"
+        FontFamily="White Night Club"
+        Grid.Row="3"
+        Grid.Column="0"
+        Grid.ColumnSpan="2"/>
 
+<Frame x:Name="frameAbout"
+        IsVisible="False">
+
+</Frame>
 </Grid>
 </ContentPage>
