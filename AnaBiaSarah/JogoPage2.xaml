@@ -7,7 +7,7 @@
 <Grid>
 <Grid.RowDefinitions>
           <RowDefinition Height="*"/>
-          <RowDefinition Height="550"/>
+          <RowDefinition Height="500"/>
           <RowDefinition Height="50"/>
 </Grid.RowDefinitions>
 
@@ -21,6 +21,7 @@
 <Label Text="Que pena, você errou! Tente novamente."
        TextColor="Black"
        Grid.Row="0"
+       Margin="10,25,10,20"
        Grid.Column="0"
        FontSize="30"
        FontFamily="Boldena"
@@ -33,7 +34,7 @@
         TextColor="BLack"
         FontFamily="White Night Club"
         Background="#8B4513"
-        Margin="10,0"
+        Margin="10,0,10,20"
         HeightRequest="50"
         CornerRadius="25"
         HorizontalOptions="FillAndExpand"

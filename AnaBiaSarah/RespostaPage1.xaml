@@ -33,6 +33,7 @@
         Background="#8B4513"
         Margin="10,0"
         HeightRequest="50"
+        CornerRadius="25"
         HorizontalOptions="FillAndExpand"
         FontSize="30"
         Grid.Row="2"

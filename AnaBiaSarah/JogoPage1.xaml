@@ -7,7 +7,7 @@
 <Grid>
 <Grid.RowDefinitions>
           <RowDefinition Height="*"/>
-          <RowDefinition Height="350"/>
+          <RowDefinition Height="520"/>
           <RowDefinition Height="60"/>
 </Grid.RowDefinitions>
 
@@ -17,8 +17,8 @@
 </Grid.ColumnDefinitions>
 
 <Image Source="sacodelixo.jpg"
-       Aspect="AspectFill"
-       Margin="10,0" 
+       Aspect="Fill"
+       Margin="10,0,10,10" 
        Grid.Row="1"
        Grid.Column="0"
        Grid.ColumnSpan="2"
@@ -27,6 +27,7 @@
 <Label Text="Você acaba de se deparar com um saco de lixo! Você abre ele ou não?"
        TextColor="Black"
        Grid.Row="0"
+       Margin="10,25,10,10"
        Grid.Column="0"
        Grid.ColumnSpan="2"
        FontSize="30"
@@ -36,6 +37,7 @@
        VerticalOptions="Start"/>
 
 <Button Text="Sim"
+        Margin="5,0"
         Clicked="BotaoSimFoiClicado"
         HeightRequest="50"
         CornerRadius="25"
@@ -47,6 +49,7 @@
         FontFamily="White Night Club"/> 
 
 <Button Text="Não"
+        Margin="5,0"
         Clicked="BotaoNaoFoiClicado"
         HeightRequest="50"
         CornerRadius="25"
